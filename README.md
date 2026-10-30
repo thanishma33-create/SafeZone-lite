@@ -13,9 +13,9 @@
 - Member 2: Thanishma Shanoje
 
 ### Hosted Project Link
-- **Frontend Live App:** [https://safezone-lite-evolve.loca.lt](https://safezone-lite-evolve.loca.lt)
-- **Backend API Server:** [https://safezone-backend-evolve.loca.lt](https://safezone-backend-evolve.loca.lt)
-- **Production Mirror (Vercel / Render):** [https://safezone-lite.vercel.app](https://safezone-lite.vercel.app) | [https://safezone-backend.onrender.com](https://safezone-backend.onrender.com)
+- **Frontend Live App (GitHub Pages):** [https://thanishma33-create.github.io/SafeZone-lite/](https://thanishma33-create.github.io/SafeZone-lite/)
+- **GitHub Repository:** [https://github.com/thanishma33-create/SafeZone-lite](https://github.com/thanishma33-create/SafeZone-lite)
+- **Deployment Status:** Live & Deployed with automated CI/CD GitHub Pages action
 
 ### Project Description
 SafeZone Lite is an emergency-response and proactive safety progressive web platform designed for women navigating public and unfamiliar spaces. It combines real-time GPS precision tracking, intelligent 1-tap nearest safe spot routing (police stations, 24/7 hospitals, verified cafes, pharmacies), multi-channel quick SOS fallbacks (Direct SMS, WhatsApp, and emergency helplines), and an automated distress SMS dispatch service powered by a Fast2SMS backend.
@@ -103,6 +103,19 @@ SafeZone Lite eliminates friction through an ultra-lightweight, zero-barrier saf
    # Accessible at http://localhost:3000 (or simply double-click index.html)
    ```
 
+#### Cloud Deployment
+
+- **GitHub Pages (Live Frontend):**
+  - **Live URL:** [https://thanishma33-create.github.io/SafeZone-lite/](https://thanishma33-create.github.io/SafeZone-lite/)
+  - Automatically built and deployed using GitHub Actions (`.github/workflows/deploy-pages.yml`) and published to the `gh-pages` branch.
+  - *Setup note:* On GitHub, visit **Settings** &rarr; **Pages** &rarr; verify **Source** is set to **GitHub Actions** or **Deploy from a branch (`gh-pages`)**.
+
+- **Vercel (Static Frontend Mirror):**
+  - Import the GitHub repository on [Vercel](https://vercel.com/new). The root `index.html` and `vercel.json` are pre-configured for instant zero-config deployment.
+
+- **Render (Node.js API Backend):**
+  - Configured with `render.yaml` for continuous deployment. Set `FAST2SMS_API_KEY` and `PERSONAL_CONTACT` in the Render dashboard environment variables.
+
 ---
 
 ## Project Documentation
@@ -158,7 +171,7 @@ flowchart TD
 
 #### API Documentation
 
-**Base URL:** `http://localhost:5000` (Local) / `https://safezone-backend-evolve.loca.lt` (Live)
+**Base URL:** `http://localhost:5000` (Local Backend Server)
 
 ##### Endpoints
 

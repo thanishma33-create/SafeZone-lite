@@ -13,3 +13,9 @@ services:
         sync: false
       - key: PERSONAL_CONTACT
         sync: false
+
+  - type: static
+    name: safezone-lite
+    plan: free
+    buildCommand: echo "Building SafeZone Lite"
+    staticPublishPath: ./frontend
