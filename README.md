@@ -69,8 +69,8 @@ SafeZone Lite eliminates friction through an ultra-lightweight, zero-barrier saf
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/thanishma33-create/evolve.git
-   cd evolve
+   git clone https://github.com/thanishma33-create/safezone-lite.git
+   cd safezone-lite
    ```
 
 2. **Install Backend Dependencies:**
